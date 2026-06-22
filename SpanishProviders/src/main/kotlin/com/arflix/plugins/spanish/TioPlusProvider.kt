@@ -107,13 +107,13 @@ class TioPlusProvider : MainAPI() {
             }
             
             return newTvSeriesLoadResponse(title, url, TvType.TvSeries, seasons) {
-                this.posterUrl = posterUrl
+                this.posterUrl = poster
                 this.plot = overview
                 this.rating = rating
             }
         } else {
             return newMovieLoadResponse(title, url, TvType.Movie, url) {
-                this.posterUrl = posterUrl
+                this.posterUrl = poster
                 this.plot = overview
                 this.rating = rating
             }

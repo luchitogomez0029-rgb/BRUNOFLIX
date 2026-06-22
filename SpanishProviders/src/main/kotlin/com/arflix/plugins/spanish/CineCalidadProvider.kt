@@ -90,13 +90,13 @@ class CineCalidadProvider : MainAPI() {
             }
 
             return newTvSeriesLoadResponse(title, url, TvType.TvSeries, seasons) {
-                this.posterUrl = posterUrl
+                this.posterUrl = poster
                 this.plot = overview
                 addTrailer(trailer)
             }
         } else {
             return newMovieLoadResponse(title, url, TvType.Movie, url) {
-                this.posterUrl = posterUrl
+                this.posterUrl = poster
                 this.plot = overview
                 addTrailer(trailer)
             }

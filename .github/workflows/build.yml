@@ -37,8 +37,7 @@ jobs:
         with:
           java-version: 11
 
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v2
+
 
       - name: Install Build Tools 26.0.1
         run: sdkmanager "build-tools;26.0.1"

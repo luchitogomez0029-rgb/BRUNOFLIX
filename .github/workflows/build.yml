@@ -40,7 +40,7 @@ jobs:
 
 
       - name: Install Build Tools 26.0.1
-        run: sdkmanager "build-tools;26.0.1"
+        run: echo "y" | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "build-tools;26.0.1"
 
       - name: Build Plugins
         run: |

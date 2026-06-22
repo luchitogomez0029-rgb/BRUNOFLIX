@@ -66,6 +66,7 @@ subprojects {
     }
 
     dependencies {
+        val compileOnly by configurations
         val implementation by configurations
 
         // Stubs for all Cloudstream classes
